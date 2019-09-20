@@ -1,0 +1,443 @@
+:root{
+    --border-color: rgb(128,128,128);
+    --deepPurple:rgb(114,82,160);
+    --burgundy: rgb(123,53,78);
+    --palePink: rgb(245,233,237);
+    --peach:rgb(182,84,118);
+    --palePurple: rgb(156,133,192);
+    --dark3: rgb(84,98,66);
+    --dark2: rgb(124,146,99);
+    --dark1: rgb(222,228,201);
+    --light3: rgb(148,86,10);
+    --light2: rgb(222,129,14);
+    --light1: rgb(253,237,217);
+    --iceBlue: rgb(65,202,208);
+}
+
+@font-face{
+    font-family: 'Helvetica 65 Medium';
+    font-style:normal;
+    font-weight: normal;
+    src: local('Helvetica 65 Medium'), url("../fonts/HelveticaNeue-Medium.woff") format("woff"), url("../fonts/HelveticaNeue-Medium.otf") format("opentype");
+}
+@font-face{
+    font-family: 'Helvetica Neue Light';
+    font-style:normal;
+    font-weight: normal;
+    src: local('Helvetica Neue Light'), url("../fonts/HelveticaNeueLight.woff")format("woff"), url("../fonts/HelveticaNeueLight.ttf") format("truetype");
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif !important;
+    background: #fafafa;
+    margin:auto;
+    padding: 1px;
+}
+.wrapper
+{
+    font-size: 10px;
+}
+
+.form-vertical
+{
+    position: relative;
+}
+.form-horizontal
+{
+    position: relative;
+    text-align: center;
+}
+.tbody
+{
+    font-size: 0px;  
+}
+
+#title
+{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+    font-family: 'Helvetica 65 Medium';
+    color: var(--deepPurple);
+    font-weight: 800;
+    font-size: 35px;
+}
+#graphTitle
+{
+    color:gray;
+    font-size:20px;
+    font-weight: 500;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Helvetica Neue Light';
+}
+
+#csvButton
+{
+    background: var(--iceBlue);
+    color: white;
+    font-family: 'Helvetica Neue Light';
+    margin-bottom: 10px;
+    width: 20vw
+}
+
+#categoryTop
+{
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    background: var(--deepPurple);
+    width:220px;
+    height:30px;
+    padding-top: 5px;
+}
+#burgundyTop
+{
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    background:var(--burgundy);
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    width:130px;
+    height:30px;
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Helvetica 65 Medium';
+}
+#purpleTop
+{
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    background:var(--deepPurple);
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    width:130px;
+    height:30px;
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Helvetica 65 Medium';
+}
+#quarterDark
+{
+    background:var(--dark3);
+    color:white;
+    font-size: 15px;
+    font-weight: 600;
+    width:120px;
+    height:30px;
+    text-align: center;
+    font-family: 'Helvetica 65 Medium';
+
+}
+#quarterLight
+{
+    background:var(--light3);
+    color:white;
+    font-size: 15px;
+    font-weight: 600;
+    width:120px;
+    height:30px;
+    text-align: center;
+    font-family: 'Helvetica 65 Medium';
+
+}
+#shortTop
+{
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    background:var(--burgundy);
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    width:60px;
+    height:30px;
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Helvetica 65 Medium';
+}
+
+#categoryBot
+{
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    background: var(--deepPurple);
+    width:220px;
+    height:30px;
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Helvetica 65 Medium';
+
+}
+#burgundyBot
+{
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    background:var(--burgundy);
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    width:130px;
+    height:30px;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Helvetica 65 Medium';
+}
+#purpleBot
+{
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    background:var(--deepPurple);
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    width:130px;
+    height:30px;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Helvetica 65 Medium';
+}
+#monthDark
+{
+    border: 1px solid var(--border-color);
+    background:var(--dark2);
+    color:white;
+    font-size: 15px;
+    font-weight: 600;
+    width:120px;
+    height:30px;
+    text-align: center;
+    font-family: 'Helvetica 65 Medium';
+
+}
+#monthLight
+{
+    border: 1px solid var(--border-color);
+    background:var(--light2);
+    color:white;
+    font-size: 15px;
+    font-weight: 600;
+    width:120px;
+    height:30px;
+    text-align: center;
+    font-family: 'Helvetica 65 Medium';
+
+}
+#shortBot
+{
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    background:var(--burgundy);
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    width:60px;
+    height:30px;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Helvetica 65 Medium';
+}
+
+#categoryFooter
+{
+    border: 1px solid var(--border-color);
+    background: var(--deepPurple);
+    width:220px;
+    height:30px;
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 10px;
+    font-family: 'Helvetica 65 Medium';
+}
+#pinkFooter
+{
+    border: 1px solid var(--border-color);
+    background:var(--peach);
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    width:130px;
+    height:30px;
+    text-align: right;
+    padding-right: 5px;
+    font-family: 'Helvetica 65 Medium';
+}
+#violetFooter
+{
+    border: 1px solid var(--border-color);
+    background:var(--palePurple);
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    width:130px;
+    height:30px;
+    text-align: right;
+    padding-right: 5px;
+    font-family: 'Helvetica 65 Medium';
+}
+#footerDark
+{
+    border: 1px solid var(--border-color);
+    background:var(--dark3);
+    color:white;
+    font-size: 15px;
+    font-weight: 600;
+    width:120px;
+    height:30px;
+    text-align: right;
+    padding-right: 5px;
+    font-family: 'Helvetica 65 Medium';
+
+}
+#footerLight
+{
+    border: 1px solid var(--border-color);
+    background:var(--light3);
+    color:white;
+    font-size: 15px;
+    font-weight: 600;
+    width:120px;
+    height:30px;
+    text-align: right;
+    padding-right: 5px;
+    font-family: 'Helvetica 65 Medium';
+
+}
+#shortFooter
+{
+    border: 1px solid var(--border-color);
+    background:var(--peach);
+    width:60px;
+    height:30px;
+}
+
+#categoryCell
+{
+    height:30px;
+    width:220px;
+    background: white;
+    border:1px solid var(--border-color);
+    color:black;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 13px;
+    font-family: 'Helvetica Neue Light';
+}
+#inputLight
+{
+    background: white;
+    font-size: 12px;
+    color: black;
+    text-align: right;
+}
+
+#cellD{
+    background:var(--dark1);
+    border: 1px solid var(--border-color);
+    height:30px;
+    width:120px;
+}
+#fieldD
+{
+    background:var(--dark1);
+    text-align: right;
+    font-size: 12px;
+    font-weight: 600;
+    color:black;
+}
+
+#cellL{
+    background:var(--light1);
+    border: 1px solid var(--border-color);
+    height:30px;
+    width:120px;
+}
+
+#fieldL
+{
+    background:var(--light1);
+    text-align: right;
+    font-size: 12px;
+    font-weight: 600;
+    color:black; 
+}
+
+#cellP{
+    background:var(--palePink);
+    border: 1px solid var(--border-color);
+    height:30px;
+    width:130px;
+}
+
+#fieldP
+{
+    background:rgb(245,233,237);
+    text-align: right;
+    font-size: 12px;
+    font-weight: 600;
+    color:black;
+}
+
+#mathCellPink
+{
+    height:30px;
+    border:1px solid var(--border-color);
+    color:black;
+    font-size: 13px;
+    background:rgb(245,233,237);
+    text-align:right;
+    width:130px;
+    padding-right: 10px;
+    font-family: 'Helvetica Neue Light';
+}
+
+#mathCellWhite
+{
+    height:30px;
+    border:1px solid var(--border-color);
+    color:black;
+    font-size: 13px;
+    background:white;
+    text-align:right;
+    width:130px;
+    padding-right: 10px;
+    font-family: 'Helvetica Neue Light';
+}
+
+#percentCellLong
+{
+    height:30px;
+    border:1px solid var(--border-color);
+    color:black;
+    font-size: 13px;
+    background:white;
+    text-align:center;
+    width:130px;
+    font-family: 'Helvetica Neue Light';
+}
+
+#percentCellShort
+{
+    height:30px;
+    border:1px solid var(--border-color);
+    color:black;
+    font-size: 13px;
+    background:var(--palePink);
+    text-align:center;
+    width:60px;
+    font-family: 'Helvetica Neue Light';
+}
